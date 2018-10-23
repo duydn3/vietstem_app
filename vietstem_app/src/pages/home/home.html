@@ -1,14 +1,25 @@
 <ion-header>
   <ion-navbar>
+    <button ion-button menuToggle icon-only>
+      <ion-icon name='menu'></ion-icon>
+    </button>
     <ion-title>
-      Ionic Blank
+      Trang chủ
     </ion-title>
   </ion-navbar>
 </ion-header>
-
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content padding class="bg-img grid-basic-page">
+    <ion-grid>
+        <ion-row>
+          <ion-col>
+            <div><img src="../../assets/imgs/icon-btn.png" (click)="onNavigateToCourse()"></div>
+          </ion-col>
+          <ion-col>
+            <div><img src="../../assets/imgs/icon-btn.png" (click)="onNavigateToLearningTool()"></div>
+          </ion-col>
+          <ion-col>
+            <div><img src="../../assets/imgs/icon-btn.png" (click)="onNavigateToPartner()"></div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
 </ion-content>

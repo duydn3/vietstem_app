@@ -1,3 +1,19 @@
 page-learning-tool {
-
+    .grid-basic-page {
+        ion-col div {
+            border-radius: 2px;
+            padding: 5px;
+            text-align: center;
+        }        
+        p {
+            padding: 10px 0 0 10px !important;
+            margin: 0;
+        }        
+    }
+    .bg-img{
+        background-image: url('../../assets/imgs/background.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
