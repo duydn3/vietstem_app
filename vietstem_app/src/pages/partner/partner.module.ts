@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { IonicPageModule } from 'ionic-angular';
+import { IonicPageModule, NavController } from 'ionic-angular';
 import { PartnerPage } from './partner';
 
 @NgModule({
@@ -10,4 +10,5 @@ import { PartnerPage } from './partner';
     IonicPageModule.forChild(PartnerPage),
   ],
 })
-export class PartnerPageModule {}
+export class PartnerPageModule {  
+}

@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { PartnerSuccessPage } from './../partner-success/partner-success';
 
 /**
- * Generated class for the PartnerPage page.
+ * Generated class for the PartnerSuccessPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,19 +10,16 @@ import { PartnerSuccessPage } from './../partner-success/partner-success';
 
 @IonicPage()
 @Component({
-  selector: 'page-partner',
-  templateUrl: 'partner.html',
+  selector: 'page-partner-success',
+  templateUrl: 'partner-success.html',
 })
-export class PartnerPage {
+export class PartnerSuccessPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-  onNavigateToPartnerSuccess(){
-      this.navCtrl.push(PartnerSuccessPage);
-  }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad PartnerPage');
+    console.log('ionViewDidLoad PartnerSuccessPage');
   }
 
 }

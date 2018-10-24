@@ -8,6 +8,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { CoursePage } from '../pages/course/course';
 import { PartnerPage } from '../pages/partner/partner';
+import { PartnerSuccessPage } from '../pages/partner-success/partner-success';
 import { LearningToolPage } from '../pages/learning-tool/learning-tool';
 
 import { ScreenOrientation } from '@ionic-native/screen-orientation';
@@ -18,7 +19,8 @@ import { ScreenOrientation } from '@ionic-native/screen-orientation';
     HomePage,
     CoursePage,
     PartnerPage,
-    LearningToolPage
+    LearningToolPage,
+    PartnerSuccessPage
   ],
   imports: [
     BrowserModule,
@@ -30,7 +32,8 @@ import { ScreenOrientation } from '@ionic-native/screen-orientation';
     HomePage,
     CoursePage,
     PartnerPage,
-    LearningToolPage
+    LearningToolPage,
+    PartnerSuccessPage
   ],
   providers: [
     StatusBar,

@@ -12,18 +12,14 @@
 
 </ion-header>
 
-<ion-content padding class="bg-img grid-basic-page">
-    <ion-grid>
-        <ion-row>
-          <ion-col>
-            <div><img src="../../assets/imgs/icon-btn.png"></div>
-          </ion-col>
-          <ion-col>
-            <div><img src="../../assets/imgs/icon-btn.png"></div>
-          </ion-col>
-          <ion-col>
-            <div><img src="../../assets/imgs/icon-btn.png"></div>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
+<ion-content padding class="bg-img">
+  <ion-label class="title" fixed>Email: </ion-label>
+  <ion-item class="item item-trns text-center">
+    <ion-input type="Email" value="" class="placeholder-text border-radius"  placeholder="Email Input"></ion-input>
+  </ion-item>
+  <ion-label class="title" fixed>Password: </ion-label>
+  <ion-item class="item item-trns text-center">
+    <ion-input type="Password" value="" class="placeholder-text border-radius"  placeholder="Pasword Input"></ion-input>
+  </ion-item>
+  <button ion-button class="btn-border-radius" color="secondary" (click)="onNavigateToPartnerSuccess()">Đăng nhập</button>
 </ion-content>
