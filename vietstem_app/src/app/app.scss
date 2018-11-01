@@ -24,3 +24,22 @@
         display: none;
     }
 }
+.alert-md .alert-wrapper {
+    max-width: 300px;
+}
+.alertCss{
+    .sent-css{
+        text-align: center;
+        right: 20px;
+        bottom: 10px;
+    }
+    .sent-css .button-inner{
+        padding: 10px;
+        padding-right: 20px;
+        background-color: darkcyan;
+        border: 1px #000 solid;
+        color: #fff;
+        font-weight: bold;
+        width: 60px;
+    }
+}
