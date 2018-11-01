@@ -25,4 +25,7 @@ page-course {
         border-radius: 10px;
         border: 1px #fff solid;
     }
+    .card-unactive{ 
+        box-shadow: inset 0 0 0 1000px rgba(69,69,69,0.8);
+    }
 }

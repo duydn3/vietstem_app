@@ -21,6 +21,9 @@ export class CoursePage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad CoursePage');
   }
+  goBack() {
+    this.navCtrl.pop();
+  }
   activeCourse() {
     let prompt = this.alertCtrl.create({
       title: 'Kích hoạt khóa học',

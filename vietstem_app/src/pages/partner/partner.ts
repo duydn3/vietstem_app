@@ -22,6 +22,9 @@ export class PartnerPage {
       this.navCtrl.push(PartnerSuccessPage);
   }
 
+  goBack() {
+    this.navCtrl.pop();
+  }
   ionViewDidLoad() {
     console.log('ionViewDidLoad PartnerPage');
   }

@@ -22,4 +22,7 @@ export class LearningToolPage {
     console.log('ionViewDidLoad LearningToolPage');
   }
 
+  goBack() {
+    this.navCtrl.pop();
+  }
 }
