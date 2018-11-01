@@ -9,9 +9,12 @@ import { LearningToolPage } from './../learning-tool/learning-tool';
   templateUrl: 'home.html'
 })
 export class HomePage {
-
+  selectOptions;
+  
   constructor(public navCtrl: NavController) {
-
+    this.selectOptions = {
+      cssClass: 'remove-ok remove-header'
+    };
   }
   onNavigateToCourse(){
       this.navCtrl.push(CoursePage);

@@ -1,24 +1,63 @@
-<ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle icon-only>
-      <ion-icon name='menu'></ion-icon>
-    </button>
-    <ion-title>
-      Trang chủ
-    </ion-title>
-  </ion-navbar>
-</ion-header>
 <ion-content padding class="bg-img grid-basic-page">
+    <ion-menu [content]="content">
+        <ion-header>
+          <ion-toolbar color="primary" class="text-center">
+            <ion-title>ID thiết bị: </ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content>
+          <ion-list>
+            <button ion-item>
+                <ion-icon name="notifications"></ion-icon><span class="txt-menu">Thông báo</span>
+            </button>
+            <button ion-item>
+              <ion-icon name="person"></ion-icon><span class="txt-menu">Tài khoản người học</span>
+            </button>
+            <p class="bt-line"></p>
+            <button ion-item>
+              <ion-icon name="key"></ion-icon><span class="txt-menu">Nhập mã kích hoạt</span>
+            </button>
+            <button ion-item>
+              <ion-icon name="cart"></ion-icon><span class="txt-menu">Đăng ký mua</span>
+            </button>
+          </ion-list>
+        </ion-content>
+      </ion-menu>
+      
+      <ion-nav id="nav" #content [root]="rootPage"></ion-nav>
+    <ion-icon name="menu" class="menu-style"  block menuToggle>
+    </ion-icon>
     <ion-grid>
         <ion-row>
           <ion-col>
-            <div><img src="../../assets/imgs/icon-btn.png" (click)="onNavigateToCourse()"></div>
+              <ion-card>
+                <img src="../../assets/imgs/btn_learning.jpg" (click)="onNavigateToCourse()">
+                <ion-card-content>
+                  <ion-card-title>
+                      Khóa học
+                    </ion-card-title>
+                </ion-card-content>
+              </ion-card>
           </ion-col>
           <ion-col>
-            <div><img src="../../assets/imgs/icon-btn.png" (click)="onNavigateToLearningTool()"></div>
+              <ion-card>
+                  <img src="../../assets/imgs/btn_partner.jpg" (click)="onNavigateToPartner()">
+                <ion-card-content>
+                  <ion-card-title>
+                      Cộng tác viên
+                    </ion-card-title>
+                </ion-card-content>
+              </ion-card>
           </ion-col>
           <ion-col>
-            <div><img src="../../assets/imgs/icon-btn.png" (click)="onNavigateToPartner()"></div>
+              <ion-card>
+                <img src="../../assets/imgs/btn_tool.jpg" (click)="onNavigateToLearningTool()">
+                <ion-card-content>
+                  <ion-card-title>
+                      Công cụ học tập
+                    </ion-card-title>
+                </ion-card-content>
+              </ion-card>
           </ion-col>
         </ion-row>
       </ion-grid>

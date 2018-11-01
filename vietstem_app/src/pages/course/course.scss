@@ -11,9 +11,18 @@ page-course {
         }        
     }
     .bg-img{
-        background-image: url('../../assets/imgs/background.png');
+        background-image: url('../../assets/imgs/background5.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+    }
+    .card-title-md{
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .card{
+        border-radius: 10px;
+        border: 1px #fff solid;
     }
 }

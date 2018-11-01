@@ -11,9 +11,34 @@ page-home {
         }        
     }
     .bg-img{
-        background-image: url('../../assets/imgs/background.png');
+        background-image: url('../../assets/imgs/main_screen.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+    }
+    .menu-style{
+        color: #fff;
+        font-size: 35px;
+        float: right;
+    }
+    .text-center{
+        text-align: center;
+    }
+    .txt-menu{
+        font-weight: bold;
+        margin-left: 20px;
+        font-size: 18px;
+    }
+    .bt-line{
+        background-color: rgb(0, 217, 255);
+    }
+    .card-title-md{
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .card{
+        border-radius: 10px;
+        border: 1px #fff solid;
     }
 }
